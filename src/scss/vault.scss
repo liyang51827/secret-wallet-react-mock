@@ -1,0 +1,209 @@
+.vault {
+    margin-left: 250px;
+    padding-top: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .connect-wallet-panel {
+        background-color: rgb(34, 30, 50);
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        box-shadow: rgb(0 0 0 / 50%) 0px 5px 10px;
+
+        h3 {
+            font-family: "Firs Neue", Roboto, sans-serif;
+        }
+
+        button {
+            background-color: #cf801d;
+            border: 1px solid #cf801d;
+            color: rgb(255, 255, 255);
+            transition: 0.3s linear;
+        }
+
+        button:hover 
+        {
+            background-color: transparent;
+            color: #cf801d;
+        }
+    }
+
+    .lockTokensCard {
+        background: linear-gradient(to right, rgb(251, 120, 68), rgb(233, 93, 218));
+        padding: 20px;
+        border-radius: 5px;
+        margin: 15px 0px;
+        color: white;
+        box-shadow: rgb(0 0 0 / 50%) 0px 5px 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    
+
+    .newLock {
+        background-color: rgb(34, 30, 50);
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        box-shadow: rgb(0 0 0 / 50%) 0px 5px 10px;
+        padding: 20px;
+
+        .enterToken {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            label {
+                cursor: pointer;
+            }
+
+            input {
+                outline: none;
+                padding: 12px 20px;
+                width: 100%;
+                background: rgb(45, 40, 66);
+                border: 1px solid rgb(45, 40, 66);
+                border-radius: 4px;
+                height: auto;
+                box-shadow: none;
+                color: rgb(255, 255, 255);
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+
+            input:focus {
+                outline: none;
+                border-color: rgb(251, 120, 68);
+            }
+
+            div {
+                position: relative;
+                padding: 20px;
+                background: rgb(34, 30, 50);
+                border-radius: 5px;
+                margin: 15px 0px;
+                color: rgb(255, 255, 255);
+                box-shadow: rgb(0 0 0 / 50%) 0px 5px 10px;
+
+                button {
+                    width: 100%;
+                    background-color: #cf801d;
+                    border: 1px solid #cf801d;
+                    color: rgb(255, 255, 255);
+                    transition: 0.3s linear;
+                }
+
+                button:hover {
+                    background-color: transparent;
+                    color: #cf801d;
+                }
+            }
+        }
+    }
+    .history {
+        table {
+            width: 100%;
+            thead {
+                width: 100%;
+            }
+        }
+    }
+    .lockToken {
+        position: relative;
+
+        svg {
+            position: absolute;
+            top: 30px;
+            left: 20px;
+        }
+        svg:hover {
+            color: #cf801d;
+        }
+
+        .unlockDate {
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .react-datepicker-wrapper {
+                input {
+                    padding: 12px 60px 12px 20px;
+                    text-align: left;
+                    width: 100%;
+                    background: rgb(45, 40, 66);
+                    border: 1px solid rgb(45, 40, 66);
+                    border-radius: 4px;
+                    height: auto;
+                    box-shadow: none;
+                    color: rgb(255, 255, 255);
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                }
+        
+                input:focus {
+                    outline: none;
+                    border-color: #cf801d!important;
+                }
+            }
+
+            .btn-del {
+                padding: 0px 15px;
+                border-radius: 5px;
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+                text-align: center;
+                font-weight: 500;
+                position: relative;
+                display: inline-block;
+                margin: 5px;
+                transition: all 0.4s linear 0s;
+                white-space: nowrap;
+                text-decoration: none;
+                border: 1px solid rgb(251, 120, 68);
+                background-color: rgb(251, 120, 68);
+                width: auto;
+            }
+
+            .btn-del:hover {
+                cursor: pointer;
+                background-color: transparent;
+                color: rgb(251, 120, 68);
+            }
+        }
+
+        .btn-approve {
+            padding: 15px;
+            border-radius: 5px;
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+            text-align: center;
+            font-weight: 500;
+            position: relative;
+            display: inline-block;
+            margin: 5px;
+            transition: all 0.4s linear 0s;
+            white-space: nowrap;
+            text-decoration: none;
+            border: 1px solid rgb(251, 120, 68);
+            background-color: rgb(251, 120, 68);
+            width: 100%;
+        }
+
+        .btn-approve:hover {
+            cursor: pointer;
+            background-color: transparent;
+            color: rgb(251, 120, 68);
+        }
+    }
+}
+
+@media(max-width: 1121px) {
+    .vault {
+        margin-left: 0px;
+    }
+}

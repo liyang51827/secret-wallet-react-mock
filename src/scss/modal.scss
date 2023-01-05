@@ -1,0 +1,43 @@
+.modal-dialog {
+    .modal-content {
+        background-color: rgb(34, 30, 50);
+        padding: 60px 25px 25px;
+        color: white;
+        font-family: inherit;
+
+        h6 {
+            font-size: 20px;
+            font-family: inherit;
+        }
+
+        a {
+            color: rgb(251, 120, 68)!important;
+            text-decoration: underline;
+            padding: 0.5rem;
+            font-size: 20px;
+            font-family: inherit;
+        }
+
+        .metamask-wallet {
+            display: flex;
+            padding: 10px;
+            background: rgb(26, 23, 38);
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            align-items: center;
+            font-size: 20px;
+            font-family: inherit;
+
+            img {
+                border-radius: 10px;
+                margin-right: 20px;
+            }
+        }
+
+        .metamask-wallet:hover {
+            border-color: #cf801d;
+        }
+    }
+}

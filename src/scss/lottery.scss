@@ -1,0 +1,166 @@
+.lottery {
+    margin-left: 250px;
+    padding-top: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .btn-buy-tickets {
+        background-color: #cf801d;
+        border: 1px solid #cf801d;
+        color: rgb(255, 255, 255);
+        transition: 0.3s linear;
+        padding-left: 60px;
+        padding-right: 60px;
+        font-weight: 800;
+    }
+
+    .btn-buy-tickets:hover {
+        background-color: transparent;
+        color: #cf801d;
+        border-color: #cf801d;
+    }
+
+    .buy-tickedts {
+        h6, h1 {
+            font-weight: 800!important;
+        }
+
+        h1 {
+            color: #cf801d;
+            font-size: 50px!important;
+        }
+    }
+
+    .ticket-draw {
+        .title {
+            border-bottom: 1px solid #cf801d;
+        }
+
+        .details {
+            background-color: #18191a;
+            margin-left: -20px;
+            margin-right: -20px;
+            border: 1px solid #221e32;
+            height: 0px;
+            overflow: hidden;
+            transition: height 1s;
+
+            .detail {
+
+                p:nth-child(1) {
+                    color: #cf801d;
+                    font-size: 15px;
+                }
+
+                h6 {
+                    font-weight: 800!important;
+                }
+
+                p:nth-child(3) {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .details.animation {
+            height: 280px;
+        }
+
+        .footer {
+            border-top: 1px solid #cf801d;
+
+            button {
+                position: relative;
+                -webkit-box-align: center;
+                align-items: center;
+                border: 0px;
+                border-radius: 16px;
+                cursor: pointer;
+                display: inline-flex;
+                font-family: inherit;
+                font-size: 16px;
+                font-weight: 800;
+                -webkit-box-pack: center;
+                justify-content: center;
+                letter-spacing: 0.03em;
+                line-height: 1;
+                opacity: 1;
+                outline: 0px;
+                transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+                height: 48px;
+                padding: 0px 24px;
+                background-color: transparent;
+                color: var(--colors-primary);
+                box-shadow: none;
+                transition: 0.2s linear;
+            }
+
+            button:hover {
+                color: #cf801d;
+            }
+        }
+    }
+
+    .round-tab {
+        display: inline-block;
+        border-radius: 16px;
+        border: 1px solid #262130;
+        background-color: #372f47;
+
+        button.active {
+            position: relative;
+            -webkit-box-align: center;
+            align-items: center;
+            border: 0px;
+            border-radius: 16px;
+            box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 600;
+            -webkit-box-pack: center;
+            justify-content: center;
+            letter-spacing: 0.03em;
+            line-height: 1;
+            opacity: 1;
+            outline: 0px;
+            transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+            height: 32px;
+            padding: 0px 16px;
+            background-color: #b8add2;
+            color: #27262c;
+        }
+
+        button {
+            position: relative;
+            -webkit-box-align: center;
+            align-items: center;
+            border: 0px;
+            border-radius: 16px;
+            box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 600;
+            -webkit-box-pack: center;
+            justify-content: center;
+            letter-spacing: 0.03em;
+            line-height: 1;
+            opacity: 1;
+            outline: 0px;
+            transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+            height: 32px;
+            padding: 0px 16px;
+            background-color: transparent;
+        }
+    }
+}
+
+@media(max-width: 1121px) {
+    .lottery {
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,170 @@
+.staking {
+    margin-left: 250px;
+    padding-top: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .account {
+        .deposits {
+            margin-top: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.25);
+
+            .title {
+                color: #fb7844;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                padding-top: 15px;
+                padding-bottom: 5px;
+                border-bottom: 2px dotted;
+                margin: 0px 15px 15px;
+                cursor: pointer;
+            }
+
+            .deposits-collapse {
+                margin: 0px 15px 15px;
+                height: 0px;
+                overflow: hidden;
+                transition: height 1s;
+
+                a {
+                    color: #fb7844;
+                }
+
+                button {
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    color: rgb(255, 255, 255);
+                    font-size: 12px;
+                    text-align: center;
+                    font-weight: 500;
+                    position: relative;
+                    display: inline-block;
+                    margin: 5px;
+                    transition: all 0.4s linear 0s;
+                    white-space: nowrap;
+                    text-decoration: none;
+                    border: 1px solid rgb(251, 120, 68);
+                    background-color: rgb(251, 120, 68);
+                    width: auto;
+                }
+                button:hover {
+                    cursor: pointer;
+                    background-color: transparent;
+                    color: rgb(251, 120, 68);
+                }
+
+                button.disable {
+                    opacity: 0.5;
+                    pointer-events: none;
+                    cursor: not-allowed;
+                    background-color: transparent;
+                    color: rgb(251, 120, 68);
+                    cursor: no-drop!important;
+                }
+            }
+
+            .deposits-collapse.animation {
+                height: 400px;
+            }
+        }
+    }
+
+    .withdraw {
+        ul {
+            border-bottom: none;
+
+            li {
+
+                button {
+                    border: none;
+                    color: white;
+                    padding-left: 0px;
+                }
+
+                button.active {
+                    border-bottom: 3px solid #fb7844;
+                    color: #fb7844;
+                    background-color: transparent;
+                }
+            }
+
+        }
+
+        .tab-content {
+            .days-slider {
+                .range-slider__wrap {
+                    input {
+                        width: 100%;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .form-switch {
+                display: flex;
+                align-items: center;
+
+                input {
+                    height: 25px;
+                    width: 60px;
+                    background-color: #fb7844;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                label {
+                    cursor: pointer;
+                    margin-left: 0.5rem;
+                }
+
+            }
+
+            a {
+                color: white;
+                margin-left: 0.5rem;
+            }
+
+            button {
+                padding: 15px;
+                border-radius: 5px;
+                color: rgb(255, 255, 255);
+                font-size: 12px;
+                text-align: center;
+                font-weight: 500;
+                position: relative;
+                display: inline-block;
+                margin: 5px;
+                transition: all 0.4s linear 0s;
+                white-space: nowrap;
+                text-decoration: none;
+                border: 1px solid rgb(251, 120, 68);
+                background-color: rgb(251, 120, 68);
+                width: 100%;
+            }
+
+            button:hover {
+                cursor: pointer;
+                background-color: transparent;
+                color: rgb(251, 120, 68);
+            }
+
+            button.disable {
+                opacity: 0.5;
+                pointer-events: none;
+                cursor: no-drop;
+                background-color: transparent;
+                color: rgb(251, 120, 68);
+            }
+        }
+    }
+}
+
+@media(max-width: 1121px) {
+    .staking {
+        margin-left: 0px;
+    }
+}
